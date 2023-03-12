@@ -46,8 +46,9 @@ namespace tpmodul4_1302210095
         {
             DoorState nextState = getNextState(currentState, trigger);
             currentState = nextState;
-
+            Console.WriteLine("Trigger: " + Convert.ToString(trigger) + "!");
             Console.WriteLine("PINTU " + ((currentState == DoorState.TERKUNCI) ? "TERKUNCI":"TIDAK TERKUNCI"));
+            Console.WriteLine();
         }
     }
 }
